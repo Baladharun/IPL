@@ -21,8 +21,6 @@ img{
     display:flex;
     background: linear-gradient(to right top, rgb(240, 23, 49) 14%, rgb(3, 10, 74) 92.4%);
     padding: 8vw;
-    min-height:96vh;
-
 }
 .iconicMoments
 {
@@ -61,6 +59,10 @@ img{
     display: flex;
     margin-left: 24vw;
     margin-top: 6vw;
+}
+#nextbtn
+{
+  margin-top: 0vh;
 }
 .leftTable
 {
@@ -215,10 +217,9 @@ footer
 .players
 {
   display:flex;
+  align-items: center;
   justify-content: space-around;
   align-items: center;
-  height:100vh;
-  width:100%;
   background-color:#901212;
   color: antiquewhite;
 }
@@ -367,6 +368,10 @@ footer{
 .jersey {
   height: 300px;
   width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .products{
@@ -389,3 +394,86 @@ footer{
 {
   background-color:rgb(222, 150, 26);
 }
+
+/* Example media query for smaller screens */
+@media (max-width: 768px) {
+  .home {
+    padding: 4vw;
+    height:fit-content;
+    width: fit-content;
+    background-color: antiquewhite;
+  }
+
+  .responsive {
+    height: 40%;
+    max-width: 60%;
+  }
+
+  .DescriptionSection {
+    margin-left: 4vw;
+    margin-top: 2vw;
+  }
+  .playerdetails
+  {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0vw;
+    margin-left: 0vw;
+    padding-left: 0vw;
+  }
+  .squad{
+    margin-left: 0vw;
+    width:60%;
+    padding-top: 3vh;
+    padding-bottom: 4vh;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .special
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .products{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction:column ;
+    height: 400vw;
+    width: 100vw;
+  }
+  .records
+  {
+    height:40vh;
+    width: 65vw;
+    margin-left: 9vw;
+    box-shadow: rgba(255, 0, 0, 0.832) 4px 8px 9px 8px;
+    margin-bottom: 9vw;
+    font-size: 3vw;
+    margin-bottom: 7vw;
+  }
+  .recordDetail
+  {
+    text-indent: 3vw;
+    font-size: 3vw;
+    font-size: 14px;
+  }
+}
+
+
+  /* Adjust navigation bar */
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  /* Adjust footer */
+  footer {
+    height: auto;
+    padding: 4vw;
+  }
+
+  .refss{
+    color: #e9b935;
+  }
